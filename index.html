@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Rock Paper Scissors Lizard Spock</title>
+    <meta name="description" content="Extended Rock Paper Scissors game">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <div class="container">    
+        <div class="header">
+            <h1>Rock Paper Scissors Lizard Spock</h1>
+            <h2>Let's Play!</h2>
+        </div>
+        
+        <div class="core">
+            <slider>
+                <slide><p>Slide 1</p></slide>
+                <slide><p>Slide 2</p></slide>
+                <slide><p>Slide 3</p></slide>
+                <slide><p>Slide 4</p></slide>
+            </slider>
+            <button class="playButton">Play</button>
+            <button class="highScore" onclick="openNav()">HighScore</button>
+        </div>
+        <div id="myNav" class="overlay">
+
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <table class="table">
+                    <caption>High Score</caption>
+                    <tr>
+                        <th>Player</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <td>Player 1</td>
+                        <td>2342</td>
+                    </tr>
+                    <tr>
+                        <td>Player 2</td>
+                        <td>5554</td>
+                    </tr>
+                </table>
+        </div>
+        <script>
+            function openNav() {document.getElementById("myNav").style.width = "100%";}
+            function closeNav() {document.getElementById("myNav").style.width = "0%";}
+        </script>
+    </div>
+    </body>
+</html>
